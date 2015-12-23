@@ -3,3 +3,5 @@ E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Cons
 E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\obj\Debug\RabbitMQ.Console.csprojResolveAssemblyReference.cache
 E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\obj\Debug\RabbitMQ.Console.exe
 E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\obj\Debug\RabbitMQ.Console.pdb
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Client.dll
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Client.xml

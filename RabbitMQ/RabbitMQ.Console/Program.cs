@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+using RabbitMQ.Client;
 
 namespace RabbitMQ.Console
 {
@@ -13,6 +15,10 @@ namespace RabbitMQ.Console
 
         static void Main(string[] args)
         {
+
+            System.Console.WriteLine("Starting RabbitMQ Queue Creator");
+            System.Console.WriteLine();
+
             var connectionFactory = new RabbitMQ.Client.ConnectionFactory()
             {
                 Password = Password,
@@ -24,7 +30,25 @@ namespace RabbitMQ.Console
 
             var model = connection.CreateModel();
 
-            model.
+            model.QueueDeclare("SQueue", true, false, false, null);
+            System.Console.WriteLine("Queue Created");
+
+            model.ExchangeDeclare("SExchange", ExchangeType.Fanout);
+            System.Console.WriteLine("Exchange Created");
+
+            model.QueueBind("SQueue", "SExchange", "sroute");
+
+
+            while (System.Console.ReadLine() != "q") { }
+            InitServer(model, "SQueue", "SExchange");
+
+
+           }
+
+        private static void InitServer(IModel model, string queue, string exchange)
+        {
+            model.QueueDelete(queue;
+            model.ExchangeDelete(exchange);
         }
     }
 }

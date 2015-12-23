@@ -1,0 +1,5 @@
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Console.exe
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Console.pdb
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\obj\Debug\RabbitMQ.Console.csprojResolveAssemblyReference.cache
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\obj\Debug\RabbitMQ.Console.exe
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\obj\Debug\RabbitMQ.Console.pdb

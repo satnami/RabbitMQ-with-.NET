@@ -5,50 +5,31 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using RabbitMQ.Client;
 
+using RabbitMQConnection = RabbitMQ.Connection.Connection;
 namespace RabbitMQ.Console
 {
     class Program
     {
-        private const string UserName = "guest";
-        private const string Password = "guest";
-        private const string HostName = "localhost";
-
         static void Main(string[] args)
         {
+            var exhangeName = "";  //default  Exhange
+            var queueName = "Queue.ex";
 
-            System.Console.WriteLine("Starting RabbitMQ Queue Creator");
-            System.Console.WriteLine();
+            RabbitMQConnection connection = new RabbitMQConnection(exhangeName, queueName);
+            var properties = connection.Model.CreateBasicProperties();
+            properties.Persistent = false;
 
-            var connectionFactory = new RabbitMQ.Client.ConnectionFactory()
-            {
-                Password = Password,
-                UserName = UserName ,
-                HostName = HostName
-            };
+            //serialize the message
+            byte[] msgBuffer = Encoding.Default.GetBytes("Hello world");
 
-            var connection = connectionFactory.CreateConnection();
+            connection.Model.BasicPublish(exhangeName, queueName, properties, msgBuffer);
 
-            var model = connection.CreateModel();
-
-            model.QueueDeclare("SQueue", true, false, false, null);
-            System.Console.WriteLine("Queue Created");
-
-            model.ExchangeDeclare("SExchange", ExchangeType.Fanout);
-            System.Console.WriteLine("Exchange Created");
-
-            model.QueueBind("SQueue", "SExchange", "sroute");
-
+            System.Console.Write("Message Sent!");
 
             while (System.Console.ReadLine() != "q") { }
-            InitServer(model, "SQueue", "SExchange");
+            connection.__destructor();
 
-
-           }
-
-        private static void InitServer(IModel model, string queue, string exchange)
-        {
-            model.QueueDelete(queue;
-            model.ExchangeDelete(exchange);
+            System.Environment.Exit(-1);
         }
     }
 }

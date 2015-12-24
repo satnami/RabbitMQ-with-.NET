@@ -5,3 +5,5 @@ E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\obj\Debug\RabbitMQ.Cons
 E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\obj\Debug\RabbitMQ.Console.pdb
 E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Client.dll
 E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Client.xml
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Connection.dll
+E:\SourceTree\RabbitMQ on .NET\RabbitMQ\RabbitMQ.Console\bin\Debug\RabbitMQ.Connection.pdb

@@ -44,7 +44,8 @@ namespace RabbitMQ.Connection
          */
         private void InitServer()
         {
-            Model.QueueDeclare(this._queueName, false, false, false, null);
+            //durable parameter : avoid the deletion of the queue after restaring the  server.
+            Model.QueueDeclare(this._queueName, true, false, false, null);
         }
 
         public void __destructor()

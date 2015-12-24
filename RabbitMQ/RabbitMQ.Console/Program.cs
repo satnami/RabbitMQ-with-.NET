@@ -17,7 +17,8 @@ namespace RabbitMQ.Console
 
             RabbitMQConnection connection = new RabbitMQConnection(exhangeName, queueName);
             var properties = connection.Model.CreateBasicProperties();
-            properties.Persistent = false;
+            //property to add persistent to the messages.
+            properties.Persistent = true;
 
             //serialize the message
             byte[] msgBuffer = Encoding.Default.GetBytes("Hello world");

@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Console", "RabbitM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Connection", "RabbitMQ.Connection\RabbitMQ.Connection.csproj", "{ED2D301A-08B7-481B-854B-BC530135AA21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Server", "RabbitMQ.Server\RabbitMQ.Server.csproj", "{1C94033C-5CE2-4578-941E-3D6C08317372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Client", "RabbitMQ.Client\RabbitMQ.Client.csproj", "{6D0C1930-A685-4B7A-B16C-C988E85FB9CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ConfigRepo", "RabbitMQ.ConfigurationRepo\RabbitMQ.ConfigRepo.csproj", "{CAFF6B2C-9F20-46A0-9246-4FCB70DEBD17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{ED2D301A-08B7-481B-854B-BC530135AA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED2D301A-08B7-481B-854B-BC530135AA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED2D301A-08B7-481B-854B-BC530135AA21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C94033C-5CE2-4578-941E-3D6C08317372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C94033C-5CE2-4578-941E-3D6C08317372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C94033C-5CE2-4578-941E-3D6C08317372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C94033C-5CE2-4578-941E-3D6C08317372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0C1930-A685-4B7A-B16C-C988E85FB9CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0C1930-A685-4B7A-B16C-C988E85FB9CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0C1930-A685-4B7A-B16C-C988E85FB9CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0C1930-A685-4B7A-B16C-C988E85FB9CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAFF6B2C-9F20-46A0-9246-4FCB70DEBD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAFF6B2C-9F20-46A0-9246-4FCB70DEBD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAFF6B2C-9F20-46A0-9246-4FCB70DEBD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAFF6B2C-9F20-46A0-9246-4FCB70DEBD17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

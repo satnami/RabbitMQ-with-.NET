@@ -51,7 +51,7 @@ namespace RabbitMQ.Connection
         public void __destructor()
         {
             Model.QueueDelete(this._queueName);
-            if (!String.IsNullOrEmpty(this._exhangeName)) Model.ExchangeDelete(this._exhangeName);
+            if (!string.IsNullOrEmpty(this._exhangeName)) Model.ExchangeDelete(this._exhangeName);
         }
     }
 }
